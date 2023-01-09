@@ -41,9 +41,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Slitta.cs" />
+    <Compile Include="Sled.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Regalo.cs" />
+    <Compile Include="Gift.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
