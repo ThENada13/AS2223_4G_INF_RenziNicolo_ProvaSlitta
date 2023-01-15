@@ -17,14 +17,23 @@ namespace Library
             gifts = new List<Gift>();   
         }
 
-
-
-        private bool AddGift()
+        public bool AddGift(Gift gift)
         {
-            double Weigth = 0;
-            double Volume = 0;
-
-            return true;
+            foreach(Gift g in gifts)
+            {
+                maxVolume += g.weigth;
+                maxVolume += g.volume;
+            }
+            if (maxWeigth < gift.weigth || maxVolume < gift.volume)
+            {
+                maxVolume = maxVolume - gift.volume;
+                maxWeigth = maxWeigth - gift.weigth;
+                gifts.Add(gift);
+                return true;
+            }
+            else
+            Console.Write("La slitta non puo reggere il peso dei regali");
+            return false;          
         }
     }
     
